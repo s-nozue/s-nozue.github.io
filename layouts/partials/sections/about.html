@@ -13,13 +13,15 @@
             <div class="col-sm-12 col-md-12 col-lg-8 content">
                 {{ .Site.Params.about.content | markdownify }}
 
-                {{ if .Site.Params.about.skills.enable }}
-                {{ .Site.Params.about.skills.title }}
+                {{ if .Site.Params.about.interests.enable }}
+                {{ .Site.Params.about.interests.title }}
                 <ul>
-                    {{ range .Site.Params.about.skills.items }}
+                    {{ range .Site.Params.about.interests.items }}
                     <li>{{ . | markdownify }}</li>
                     {{ end }}
                 </ul>
+
+
                 {{ end }}
             </div>
         </div>

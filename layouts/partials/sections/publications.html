@@ -1,10 +1,10 @@
-{{ if .Site.Params.education.enable | default false }}
-<section id="education" class="py-5">
+{{ if .Site.Params.publications.enable | default false }}
+<section id="publications" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ .Site.Params.education.title | default "Education" }}</h3>
+        <h3 class="text-center">{{ .Site.Params.publications.title | default "Publications" }}</h3>
         <div class="row justify-content-center py-5">
-            {{ $indexMenu := .Site.Params.education.index }}
-            {{ range $index, $element := .Site.Params.education.items }}
+            {{ $indexMenu := .Site.Params.publications.index }}
+            {{ range $index, $element := .Site.Params.publications.items }}
             <div class="col-12 p-0">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
                     {{ if $indexMenu }}
@@ -25,17 +25,17 @@
                                 </div>
                                 <h5 class="card-title">{{ .title }}</h5>
                                 
-                                {{ if .school.url }}
-                                <a href="{{ .school.url }}" target="_blank">
+                                {{ if .publication.url }}
+                                <a href="{{ .publication.url }}" target="_blank">
                                     <h6>
-                                    {{ .school.name }}
+                                    {{ .publication.name }}
                                     </h6>
                                 </a>
                                 {{ else }}
-                                {{ .school.name }}
+                                {{ .publication.name }}
                                 {{ end }}
 
-                                <div class="py-1 education-content">
+                                <div class="py-1 publications-content">
                                     {{ .content | markdownify}}
                                 </div>
 

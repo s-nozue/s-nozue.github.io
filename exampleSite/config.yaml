@@ -1,7 +1,7 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://s-nozue-plofile.org"
 languageCode: "en-us"
-title: "Hugo Profile"
-theme: hugo-profile
+title: "S-Nozue" Profile"
+theme: S-Nozue-profile
 
 outputs:
   home:
@@ -124,10 +124,10 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "野末 慎之介 / Shinnosuke Nozue."
+    title: "Shinnosuke Nozue."
     subtitle: "Profile Page"
-    content: "I am a menber of Tohoku NLP Group."
-    image: /images/hero.svg
+    content: "I am a menber of Tohoku NLP Group (Matsubayashi Labo)."
+    image: /images/hero_photo.JPG
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -143,6 +143,8 @@ params:
           url: https://github.com/s-nozue
         - icon: fab fa-x-twitter
           url: https://twitter.com/nozoc_tohoku
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/%E6%85%8E%E4%B9%8B%E4%BB%8B-%E9%87%8E%E6%9C%AB-623a512a3/
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"
@@ -151,88 +153,43 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/about_photo.JPG"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
+      Hello. I am a 4th year undergraduate student at [Tohoku University](https://www.tohoku.ac.jp/japanese/).
+      I am studying natural language processing at [Tohoku NLP Group](https://www.nlp.ecei.tohoku.ac.jp/) ([Matsubayashi Lab.](https://www.edunlp.sed.tohoku.ac.jp/)).
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
-    # skills:
-    #   enable: true
-    #   title: "Here are a few technologies I've been working with recently:"
-    #   items:
-    #     - "HTML"
-    #     - "CSS"
-    #     - "JavaScript"
-    #     - "React"
-    #     - "Node"
-    #     - "Express"
+    interests:
+      enable: true
+      title: "Here are Here are my research interests:"
+      items:
+        - "Natural Language Processing"
+        - "Machine Learning"
+        - "Discourse"
+        - "Dialogue System"
+        - "Japanese"
 
-  # Experience
-  # experience:
-  #   enable: true
-  #   # title: "Custom Name"
-  #   items:
-  #     - job: "Senior Software Developer"
-  #       company: "Facebook"
-  #       companyUrl: "https://example.com"
-  #       date: "Jan 2022 - present"
-  #       featuredLink:
-  #         enable: true
-  #         name: "View the project"
-  #         url: "https://example.com"
-  #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+    hobbies:
+      enable: true
+      title: "My hobbies:"
+      items:
+        - "Playing and watching Soccer"
+        - "Mahjong"
+        - "Taking photos"
 
-  #     - job: "Software Developer"
-  #       company: "Amazon"
-  #       companyUrl: "https://example.com"
-  #       date: "Sep 2020 - Dec 2021"
-  #       featuredLink:
-  #         enable: true
-  #         url: "https://example.com"
-  #       info:
-  #         enable: true
-  #         content: I worked as a software developer for more than one year in Amazon.
-  #       content: |
-  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+  # 独自のもの
+  publications:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "**野末 慎之介\***, 中野雄斗\*, 穀田 一真, 有山 知希, 佐藤 魁, 曾根 周作, 亀井 遼平, 謝 素春, 成田 風香, 守屋 彰二（東北大学）, 赤間 怜奈, 松林 優一郎, 坂口 慶祐（東北大学・理化学研究所)"
+        publication:
+          name: "Hagi bot: LLMを用いた対話状態追跡と人間らしい振る舞いで自然な議論を行うマルチモーダル対話システム. 第99回人工知能学会 言語・音声理解と対話処理研究会 (第14回対話システムシンポジウム) (SLUD2023), 2023."
+          url: "https://github.com/cl-tohoku/hagi-bot"
+        content: |-
+          \* 第一著者と第二著者の貢献度は等しい
 
-  #         - Lead backend developer for a product.
-  #         - Created a frontend design for a product.
-
-  #     - job: "Junior Software Developer"
-  #       company: "Apple"
-  #       companyUrl: "https://example.com"
-  #       date: "Jan 2020 - Aug 2020"
-  #       info:
-  #         enable: false
-  #       featuredLink:
-  #         enable: true
-  #         url: "https://example.com"
-  #       content: |
-  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-  #         - Lead backend developer for a product.
-  #         - Created a frontend design for a product.
-
-  #     - job: "UI/UX Designer"
-  #       company: "Netflix"
-  #       companyUrl: "https://example.com"
-  #       date: "June 2017 - Nov 2019"
-  #       featuredLink:
-  #         enable: true
-  #         url: "https://example.com"
-  #       content: |
-  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-  #         - Lead backend developer for a product.
-  #         - Created a frontend design for a product.
-
-  #     - job: "Product Designer"
-  #       company: "Google"
-  #       companyUrl: "https://example.com"
-  #       date: "Feb 2016 - Mar 2017"
-  #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-  # Education
+  # Educationのformatをpublicationsにする
   education:
     enable: true
     # title: "Custom Name"
@@ -243,7 +200,6 @@ params:
       #     name: "University of California, Berkeley"
       #     url: "https://example.org"
       #   date: "2013 - 2015"
-      #   GPA: "3.8 out of 5.0"
       #   content: |-
       #     Extracurricular Activities
       #       - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -253,16 +209,16 @@ params:
           name: "Tohoku University"
           url: "https://www.tohoku.ac.jp/japanese/"
         date: "2020 - "
-        # GPA: "3.9 out of 5.0"
         content: |-
-          
-          
-          # - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          # - Face mask detection using a single convolutional neural network.
+          Jul. 2022 - Now
 
-          # Extracurricular Activities
-          #   - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          #   - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            - [Member of Tohoku NLP Group](https://www.nlp.ecei.tohoku.ac.jp/) ([Matsubayashi Lab.](https://www.edunlp.sed.tohoku.ac.jp/)).
+            - Studying Natural Language Processing and Machine Learnig.
+
+          Apr. 2020 - Jun. 2022
+
+            - Studied Education.
+              - Educational Informatics, Educational Administration, Educational Psychology, Philosophy of Education, Comparative Education
         # featuredLink:
         #   enable: true
         #   name: "My academic record"
@@ -271,7 +227,6 @@ params:
         school:
           name: "Utsunomiya High School."
           url: "https://www.tochigi-edu.ed.jp/utsunomiya/nc3/"
-        # GPA: "4.2 out of 5.0"
         # featuredLink:
         #   enable: true
         #   url: "https://example.com"
@@ -282,20 +237,20 @@ params:
     # title: "Custom Name"
     items:
       - title: 第99回人工知能学会 言語・音声理解と対話処理研究会 (第14回対話システムシンポジウム) (SLUD2023) 対話システムライブコンペティション6 予選１位通過
-        # content: I solved all problems with optimal solution.
+        content: Our team passed the preliminary round of the 6th Dialogue System Live Competition in 1st place.
         url: https://sites.google.com/view/dslc6/%E3%82%B7%E3%83%81%E3%83%A5%E3%82%A8%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF
         image: /images/erika.png
       - title: Comming Soon
-        # content: 
+        content: 
         image: /images/achievment.jpg
       - title: Comming Soon
-        # content: 
+        content: 
         url: "https://github.com/gurusabarish/hugo-profile"
         image: /images/achievment.jpg
       - title: Comming Soon
-        # content: We are developed a product which can help others.
+        content: 
       - title: Comming Soon
-        # content: Contributed to a open source project.
+        content: 
         # url: https://example.com
 
   # projects
@@ -304,7 +259,7 @@ params:
     # title: "Custom Name"
     items:
       - title: Hagi bot
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        content: 
         image: /images/erika.png
         # featured:
         #   name: Link
@@ -321,32 +276,32 @@ params:
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      # - title: Image Converter
-      #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-      #   image: /images/projects/converter.jpg
-      #   featured:
-      #     name: Demo
-      #     link: https://django-converter.herokuapp.com
-      #   badges:
-      #     - "Django"
-      #     - "Bootstrap"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/gurusabarish/converter
+      - title: Coming Soon
+        # content: 
+        # image: /images/projects/converter.jpg
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/converter
 
-      # - title: Hugo Profile V2
-      #   content: A clean and simple Hugo template for personal portfolio and blog.
-      #   image: /images/projects/profile2.jpg
-      #   featured:
-      #     name: Demo V2
-      #     link: https://hugo-profile-2.netlify.app
-      #   badges:
-      #     - "Hugo"
-      #     - "Bootstrap"
-      #     - "Javascript"
-      #   links:
-      #     - icon: fab fa-github
-      #       url: https://github.com/gurusabarish/HugoProfileV2
+      - title: Comming Soon
+        # content:
+        # image: /images/projects/profile2.jpg
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
@@ -361,6 +316,72 @@ params:
     #   emailCaption: "Enter your email address"
     #   messageCaption: "Enter your message here"
 
+  # Experience -> Hobbies
+  # Hobbies:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - job: "Soccer"
+  #       hobby: "Soccer"
+  #       hobbyUrl: "https://example.com"
+  #       date: "2009 - present"
+  #       featuredLink:
+  #         enable: true
+  #         name: "View the project"
+  #         url: "https://example.com"
+  #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  #     - job: "Software Developer"
+  #       hobby: "Amazon"
+  #       hobbyUrl: "https://example.com"
+  #       date: "Sep 2020 - Dec 2021"
+  #       featuredLink:
+  #         enable: true
+  #         url: "https://example.com"
+  #       info:
+  #         enable: true
+  #         content: I worked as a software developer for more than one year in Amazon.
+  #       content: |
+  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+  #         - Lead backend developer for a product.
+  #         - Created a frontend design for a product.
+
+  #     - job: "Junior Software Developer"
+  #       hobby: "Apple"
+  #       hobbyUrl: "https://example.com"
+  #       date: "Jan 2020 - Aug 2020"
+  #       info:
+  #         enable: false
+  #       featuredLink:
+  #         enable: true
+  #         url: "https://example.com"
+  #       content: |
+  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+  #         - Lead backend developer for a product.
+  #         - Created a frontend design for a product.
+
+  #     - job: "UI/UX Designer"
+  #       hobby: "Netflix"
+  #       hobbyUrl: "https://example.com"
+  #       date: "June 2017 - Nov 2019"
+  #       featuredLink:
+  #         enable: true
+  #         url: "https://example.com"
+  #       content: |
+  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+  #         - Lead backend developer for a product.
+  #         - Created a frontend design for a product.
+
+  #     - job: "Product Designer"
+  #       hobby: "Google"
+  #       hobbyUrl: "https://example.com"
+  #       date: "Feb 2016 - Mar 2017"
+  #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+
   footer:
     recentPosts:
       path: "blogs"
@@ -370,10 +391,10 @@ params:
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/s-nozue
-      # linkedin: https://linkedin.com
+      linkedin: https://www.linkedin.com/in/%E6%85%8E%E4%B9%8B%E4%BB%8B-%E9%87%8E%E6%9C%AB-623a512a3/
       twitter: https://twitter.com/nozoc_tohoku
       # instagram: https://instagram.com
-      # facebook: https://facebook.com
+      facebook: https://www.facebook.com/profile.php?id=100087903578897
 
   # List pages like blogs and posts
   listPages:
