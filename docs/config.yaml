@@ -1,7 +1,7 @@
 baseURL: "https://s-nozue.github.io"
 languageCode: "en-us"
-title: "S-Nozue" Profile"
-theme: S-Nozue-profile
+title: "Hugo Profile"
+theme: hugo-profile
 publishDir: "docs"
 
 outputs:
@@ -381,7 +381,6 @@ params:
   #       hobbyUrl: "https://example.com"
   #       date: "Feb 2016 - Mar 2017"
   #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
 
   footer:
     recentPosts:
