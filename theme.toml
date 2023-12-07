@@ -2,10 +2,10 @@ name = "Hugo Profile"
 license = "MIT"
 licenselink = "https://github.com/s-nozue/s-nozue.github.io/blob/master/LICENSE"
 description = "A high performance and mobile first hugo template for personal portfolio and blog."
-homepage = "https://github.com/s-nozue/s-nozue.github.io"
-demosite = "https://s-nozue-plofile.org"
+homepage = "https://s-nozue.github.io/with-hugo/"
 tags = ["Responsive", "Blog", "Portfolio", "Personal"]
 min_version = "0.68.0"
+publishDir = "docs"
 
 [author]
   name = "Gurusabarish"
